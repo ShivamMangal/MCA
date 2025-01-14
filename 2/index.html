@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centered Content</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f4f4f4;
+    }
+
+    .center-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 500px;
+      width: 500px;
+      border: 2px solid #ccc;
+      background-color: white;
+      text-align: center;
+    }
+
+    .center-container img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .center-container p {
+      margin-top: 10px;
+      word-wrap: break-word;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="center-container">
+    <img src="https://via.placeholder.com/150" alt="Example Image">
+    <p>This is a sample paragraph. Make sure it wraps properly when it’s long.</p>
+  </div>
+</body>
+</html>
